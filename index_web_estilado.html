@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IPET N°247 — Web Oficial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  body { margin:0; font-family:Inter, sans-serif; background:#f4f7fb; color:#0a2540;}
+
+  header{
+    background:linear-gradient(90deg,#003b73,#0066ff);
+    color:#fff;padding:35px;text-align:center;
+  }
+
+  nav a{
+    color:white;margin:10px;text-decoration:none;
+    font-weight:600;background:rgba(255,255,255,.2);
+    padding:8px 14px;border-radius:8px;
+  }
+
+  .container{width:90%;max-width:1200px;margin:auto;}
+  section{background:white;padding:35px;border-radius:14px;margin-top:35px;
+  box-shadow:0 0 12px rgba(0,0,0,.08);}
+
+  h2{font-size:30px;font-weight:700;margin-bottom:20px;border-left:6px solid #0066ff;padding-left:10px;}
+  .historia p{line-height:1.75;font-size:17px;margin-bottom:25px;}
+
+  .block{display:flex;align-items:center;margin:25px 0;}
+  .block:nth-child(even){flex-direction:row-reverse;text-align:right;}
+  .block span{
+    background:#0066ff;color:white;padding:8px 14px;border-radius:50px;
+    font-weight:700;margin:0 15px;min-width:65px;text-align:center;}
+  .block p{
+    background:rgba(0,102,255,.08);padding:12px 18px;border-radius:10px;font-size:16px;
+  }
+
+  .reveal{opacity:0;transform:translateY(40px);transition:all .9s ease;}
+  .reveal.active{opacity:1;transform:translateY(0);}
+
+  /* Responsive */
+  @media (max-width:700px){
+    h2{font-size:22px;}
+    .block{flex-direction:column;text-align:left;}
+    .block:nth-child(even){flex-direction:column;text-align:left;}
+    .block span{margin-bottom:8px;}
+    .imagenes img{width:100%;}
+  }
+
+  input, textarea, button{
+    width:100%; padding:10px; margin-top:10px; border-radius:8px; border:1px solid #ccc; font-size:16px;
+  }
+  button{background:#0066ff;color:#fff;border:none;padding:12px;font-weight:700;cursor:pointer;border-radius:8px;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>IPET N°247 "Ing. Carlos A. Cassaffousth"</h1>
+  <nav>
+    <a href="#historia">Historia</a>
+    <a href="#alumnos">Alumnos</a>
+    <a href="#egresados">Egresados</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<div class="container">
+
+<section id="historia" class="historia">
+<h2>Historia del Instituto</h2>
+<p>El "Cassaffousth" fue inaugurado el 2 de junio de 1919 como Escuela de Artes y Oficios.
+En 1932 pasa a llamarse Escuela Industrial de Artes y Oficios. En 1938 se convierte en
+Escuela Nacional Técnica de Oficios, abriendo Automotores. En 1946 suma Ciclo Superior,
+formando técnicos de 6 años. En 1955 abre Construcciones. En 1962 se establece plan
+N°14086/62. En 1965 se fijan especialidades técnicas superiores. En 1968 pasa a ENET N°2
+Cassaffousth y en 1993 se convierte oficialmente en IPEM / IPET 247 bajo la Provincia.</p>
+
+<h2>Línea del Tiempo</h2>
+
+<div style="margin-top:30px;">
+
+  <div class="block reveal"><span>1919</span><p>Fundación como Escuela de Artes y Oficios.</p></div>
+  <div class="block reveal"><span>1932</span><p>Renombrada Escuela Industrial.</p></div>
+  <div class="block reveal"><span>1938</span><p>Se incorpora Automotores.</p></div>
+  <div class="block reveal"><span>1946</span><p>Se agrega Ciclo Superior.</p></div>
+  <div class="block reveal"><span>1955</span><p>Apertura de Construcciones.</p></div>
+  <div class="block reveal"><span>1962</span><p>Nuevo plan de estudios técnico.</p></div>
+  <div class="block reveal"><span>1965</span><p>Especialidades superiores técnicas.</p></div>
+  <div class="block reveal"><span>1968</span><p>Pasa a E.N.E.T N°2.</p></div>
+  <div class="block reveal"><span>1993</span><p>Nace IPEM / IPET 247.</p></div>
+</div>
+</section>
+
+<section id="alumnos">
+<h2>Alumnos</h2>
+<p>Contenido institucional, actividades y proyectos.</p>
+</section>
+
+<section id="egresados">
+<h2>Egresados</h2>
+<p>Listado y promociones históricas del instituto.</p>
+</section>
+
+<section id="galeria">
+<h2>Galería</h2>
+<p>(Podemos agregar fotos si me mandás imágenes)</p>
+</section>
+
+<section id="contacto">
+<h2>Contacto</h2>
+<p><b>Dirección:</b> Deán Funes 1500-1548, Córdoba</p>
+
+<iframe width="100%" height="350" src="https://www.google.com/maps?q=De%C3%A1n+Funes+1500-1548,+X5000+C%C3%B3rdoba&output=embed" style="border-radius:12px;"></iframe>
+
+<form action="https://api.web3forms.com/submit" method="POST" style="margin-top:25px;">
+  <input type="hidden" name="access_key" value="ceca100a-07fc-4848-aa09-c358f6c590c1">
+  <input type="text" name="name" placeholder="Tu nombre" required>
+  <input type="email" name="email" placeholder="Tu correo" required>
+  <textarea name="message" placeholder="Mensaje..." required></textarea>
+  <button>Enviar</button>
+</form>
+</section>
+
+</div>
+
+<footer style="text-align:center;margin:45px;color:#555;">
+© IPET N°247 — Sitio Actualizado 2025
+</footer>
+
+<script>
+const revealElements=document.querySelectorAll('.reveal');
+function revealOnScroll(){revealElements.forEach(el=>{
+  const rect=el.getBoundingClientRect();
+  if(rect.top < window.innerHeight-80){el.classList.add('active');}
+});}
+window.addEventListener('scroll',revealOnScroll);
+revealOnScroll();
+</script>
+
+</body>
+</html>
